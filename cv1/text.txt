@@ -1,0 +1,52 @@
+---------------------
+  1. cvièní (X)HTML
+---------------------
+
+--------------------------------
+  Instrukce k formátování webu
+--------------------------------
+
+- VŠE ØEŠTE v rámci jazyka XHTML !!!
+- do titulku webu vlote své jméno a pøijmení
+- písmo Arial
+- nadpis H1 - èervenı
+- nadpis H3 - modrı, kurzíva, písmo Comic Sans
+- obrázky a odkazy v tabulce (zarovnány pod sebou viz vzor)
+- odkaz na novou stránu(záloku), kde se zobrazí zvìtšenı obrázek
+- odsazení u odstavcù pomocí pevnıch mezer, zarovnání
+- snate se vyøešit odkazy, které by mìly bıt èerné nenavštívené, èervené navštívené 
+
+------------------------------------------------------------------------
+  Informace èerpejte z pøednášky popøípadì https://www.jakpsatweb.cz/
+------------------------------------------------------------------------
+
+----------------
+  Text do webu
+----------------
+
+Mobilní telefon HTC Smart Black
+
+HTC Smart je cenovì dostupnı mobilní telefon s dotykovım displejem pøinášející øadu uiteènıch funkcí a schopností. Ovládání probíhá z velké èásti pøes dotykovı displej s úhlopøíèkou 2,8 palce, kterı je doplnìn nìkolika tlaèítky na tìle pøístroje. Jedná se o jeden z prvních pøístrojù vybavenıch operaèním systémem Brew, kterı je speciálnì urèenı do univerzálních pøístrojù pro ménì nároèné uivatele. Mezi jeho vıhody patøí svinı chod, pøíjemné ovládání a dobrá aplikaèní vıbava.
+
+HTC navíc pøináší i nìkolik podob hlavní obrazovky, mezi kterımi je moné pøepínat. Mezi nabízené aplikace patøí funkce pro organizaci èasu, internetovı prohlíeè, e-mail, multimediální pøehrávaè, polohovı senzor èi FM rádio. Dnes ji nemùe chybìt digitální fotoaparát, zde má rozlišení tøi megapixely a je doplnìn i bleskem. Hodit se mùe 3,5 mm konektor pro pøipojení sluchátek a bezdrátové rozhraní Bluetooth. Pro pøipojení k poèítaèi se vyuívá HTC ExtUSB konektor. Napájení má na starosti akumulátor s kapacitou 1100 mAh, kterı dodá pøístroji dostatek energie pro více ne 600 hodin v pohotovostním reimu nebo pro 7,5 hodiny hovoru.
+
+Podporované sítì:
+GSM 850/ 900/ 1800/ 1900 MHz WCDMA 2100 MHz
+
+Procesor: 
+300 MHz
+
+Pamì: 
+ROM: 256 MB, RAM: 256 MB Slot pro pamìové karty microSDHC
+
+Displej:
+TFT dotykovı displej s úhlopøíèkou 2,8 palce Rozlišení 240 x 320 bodù (QVGA)
+
+Fotoaparát:
+3megapixelovı fotoaparát s pevnım ohniskem LED blesk, záznam videa
+
+Další vlastnosti:
+Internetovı prohlíeè E-mailovı klient Funkce pro organizaci èasu Hudební pøehrávaè (.aac, .amr, .qcp, .mid, .m4a, .mp3, .wma, .wav) Pøehrávaè videa (.mp4, .3gp, .3g2, .m4v) Polohovı senzor FM rádio
+
+Rozhraní:
+Bluetooth 2.0 (EDR, A2DP) USB 2.0 (HTC ExtUSB) 3,5 mm audio jack 
