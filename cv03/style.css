@@ -1,0 +1,74 @@
+body {
+    background-image: url("pozadi.jpg");
+    background-repeat: repeat;
+}
+
+h1 {
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.board {
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.playingfield td {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+
+.playingfield tbody tr:nth-child(even) td:nth-child(odd),
+.playingfield tbody tr:nth-child(odd) td:nth-child(even){
+    background-color: white;
+}
+
+.playingfield tbody tr:nth-child(odd) td:nth-child(odd),
+.playingfield tbody tr:nth-child(even) td:nth-child(even){
+    background-color: black;
+}
+
+.playingfield {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+}
+
+.playingfield .coord {
+    background: none !important;
+}
+
+.playingfield thead {
+    height: 20px !important;
+    text-align: center;
+}
+
+.playingfield .coord.col {
+    width: 30px !important;
+}
+
+.board {
+    padding-bottom: 20px;
+}
+
+.kingw { background-image: url("figurky/kralBily.jpg"); }
+.kingb { background-image: url("figurky/kralCerny.jpg"); }
+.queenw { background-image: url("figurky/kralovnaBila.jpg"); }
+.queenb { background-image: url("figurky/kralovnaCerna.jpg"); }
+.bishopw { background-image: url("figurky/strelecBily.jpg"); }
+.bishopb { background-image: url("figurky/strelecCerny.jpg"); }
+.knightw { background-image: url("figurky/kunBily.jpg"); }
+.knightb { background-image: url("figurky/kunCerny.jpg"); }
+.rookw { background-image: url("figurky/vezBila.jpg"); }
+.rookb { background-image: url("figurky/vezCerna.jpg"); }
+.pawnw { background-image: url("figurky/pesecBily.jpg"); }
+.pawnb { background-image: url("figurky/pesecCerny.jpg"); }
