@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responzivni desing - Frydryn</title>
+    <link rel="stylesheet" href="style.css?version=123">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="head">
+        <h1>Responzivni navigace</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Uvod</a></li>
+            <li><a href="#">Fotogalerie</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <div class="responzive_menu">Menu</div>
+    </nav>
+
+    <div id="main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum numquam, tempora ex similique porro voluptatibus tenetur deserunt doloremque error nulla suscipit adipisci ab maiores impedit sunt aliquam nisi natus rem quo quia voluptatum libero sint dicta nesciunt. Quo, deleniti deserunt. Earum hic vero explicabo pariatur quas cumque quia quis officia.</div>
+
+
+    <script>
+        $('.responzive_menu').click(function() {
+            $('nav ul').toggleClass('show');
+        });
+    </script>
+</body>
+</html>
