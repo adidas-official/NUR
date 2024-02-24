@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3b4753;
+    background-image: url("design/background_line.jpg");
+    background-repeat: repeat-x;
+}
+
+header {
+    background-image: url("design/head.jpg");
+    width: 986px;
+    height: 142px;
+}
+
+nav, article {
+    float: left;
+}
+
+nav {
+    width: 240px;
+    height: 528px;
+    background-image: url("design/menu.jpg");
+}
+
+article {
+    width: 746px;
+}
+
+.top {
+    height: 131px;
+    width: 100%;
+    background-image: url("design/main_head.jpg");
+}
+
+.content {
+    background-image: url("design/main_line.jpg");
+    background-repeat: repeat-y;
+    width: 746px;
+    min-height: 400px;
+    padding: 20px;
+}
+
+h1 {
+    color: olive;
+    margin-top: 0;
+}
+
+.content img, .content p {
+    display: inline-block;
+}
+
+.content p {
+    width: 450px;
+    margin-right: 20px;
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.content img {
+    width: 200px;
+}
+
+footer {
+    clear: both;
+    width: 986px;
+    height: 35px;
+    background-image: url("design/foot.jpg");
+}
+
