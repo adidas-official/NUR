@@ -19,7 +19,6 @@ nav ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    max-height: 0;
     transition: max-height 0.6s;
     -webkit-transition: max-height 0.6s;
     -ms-transition: max-height 0.6s;
@@ -41,7 +40,7 @@ a {
     color: inherit;
 }
 
-#main {
+#main, #foto {
     line-height: 25px;
     font-size: 14px;
     padding: 40px;
@@ -49,7 +48,40 @@ a {
     margin: 0 auto;
 }
 
+.responzive_menu {
+    width: 100%;
+    background-color: #e45900;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 6px;
+}
+
+.container img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.show {
+    min-height: 20em;
+}
 /* Responzinvi design */
+@media screen and (max-width: 900px) {
+   .container {
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+
 @media screen and (max-width: 580px) {
    nav ul li {
     box-sizing: border-box;
@@ -58,6 +90,14 @@ a {
     text-align: left;
    } 
 
+   p {
+    font-size: smaller;
+   }
+
+   nav ul {
+    max-height: 0;
+   }
+
    h1 {
     font-size: 25px;
    }
@@ -65,19 +105,8 @@ a {
    .responzive_menu {
     display: block;
    }
-}
 
-.responzive_menu {
-    width: 100%;
-    background-color: #e45900;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 15px 0;
-    cursor: pointer;
-    color: white;
-    display: none;
-}
-
-.show {
-    min-height: 20em;
+   .container {
+    grid-template-columns: repeat(1, 6fr);
+   }
 }
