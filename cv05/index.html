@@ -4,27 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One page layout - Frydryn</title>
+    <link rel="stylesheet" href="style.css?version=123">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#podstranka1">Uvod</a></li>
-            <li><a href="#podstranka2">Fotogalerie</a></li>
-            <li><a href="#podstranka3">Kontakt</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#podstranka1">Uvod</a></li>
+                <li><a href="#podstranka2">Fotogalerie</a></li>
+                <li><a href="#podstranka3">Video</a></li>
+                <li><a href="#podstranka4">Audio</a></li>
+                <li><a href="#podstranka5">Kontakt</a></li>
+            </ul>
+        </nav>
 
-    <div id="podstranka1">
-        <h1>Uvod</h1>
-    </div>
-    <div id="podstranka2">
-        <h1>Fotogalerie</h1>
-    </div>
-    <div id="podstranka3">
-        <h1>Kontakt</h1>
-    </div>
-    <div id="foot">
-        Copyright &copy; 2024
+        <div class="env">
+            <div id="podstranka1">
+                <h1>Uvod</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, voluptas illum sapiente molestias quis distinctio unde? Fuga qui perferendis ad sint porro at saepe magnam labore vel vero odit itaque, et placeat, eius ullam quaerat! Assumenda repellendus modi odio omnis.</p>
+            </div>
+        </div>
+        <div class="env">
+            <div id="podstranka2">
+                <h1>Fotogalerie</h1>
+                <table>
+                    <tr>
+                        <td><a href="BC-BV.png" target="_blank"><img src="BC-BV.png" alt="foto1"></a></td>
+                        <td><a href="HA01.png" target="_blank"><img src="HA01.png" alt="foto2"></a></td>
+                        <td><a href="Strevlik01.png" target="_blank"><img src="Strevlik01.png" alt="foto3"></a></td>
+                        <td><a href="BV03.jpg" target="_blank"><img src="BV03.jpg" alt="foto4"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="BC-BV.png" target="_blank"><img src="BC-BV.png" alt="foto5"></a></td>
+                        <td><a href="BV03.jpg" target="_blank"><img src="BV03.jpg" alt="foto6"></a></td>
+                        <td><a href="HA01.png" target="_blank"><img src="HA01.png" alt="foto7"></a></td>
+                        <td><a href="Strevlik01.png" target="_blank"><img src="Strevlik01.png" alt="foto8"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="env">
+            <div id="podstranka3">
+                <h1>Video</h1>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Prohlizec nepodporuje video
+                </video>
+            </div>
+        </div>
+        <div class="env">
+            <div id="podstranka4">
+                <h1>Audio</h1>
+                <ul>
+                    <li>
+                        <audio controls="controls">
+                            <source src="audio1.mp3">
+                            Prohlizec nepodporuje audio
+                        </audio>
+                    </li>
+                    <li>
+                        <audio controls="controls">
+                            <source src="audio2.mp3">
+                            Prohlizec nepodporuje audio
+                        </audio>
+                    </li>
+                    <li>
+                        <audio controls="controls">
+                            <source src="audio3.mp3">
+                            Prohlizec nepodporuje audio
+                        </audio>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="env">
+            <div id="podstranka5">
+                <h1>Kontakt</h1>
+                <form action="#">
+                    <input type="text" name="uname" placeholder="jmeno" required><br>
+                    <input type="email" name="mail" id="mail" placeholder="email" required><br>
+                    <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+                    <button type="submit">Odeslat</button>
+                </form>
+            </div>
+        </div>
+        <div class="env">
+            <footer id="foot">
+                Copyright &copy; 2024
+            </footer>
+        </div>
     </div>
 </body>
 </html>
