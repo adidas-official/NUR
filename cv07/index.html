@@ -4,11 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Bootstrap 5</title>
+    <style>
+        section {
+            padding: 60px;
+        }
+
+        section:first {
+            padding-top: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 
+    layout použit pomocí třídy container-fluid
+    navigace fixní (k vrchnímu okraji webu), která bude mít 3 položky (3 sekce)
+    1. sekce Slider - použít libovolně Carousel se 3 Vámi vybranými fotkami + jejich texty ve fotce
+    2. sekce Fotogalerie - 3 fotografie vedle sebe ve 3 sloupcích (použijte obrázkovou galerii s třídou .thumbnail), po kliknutí se fotky zobrazí v novém okně
+    3. sekce Modální okno - 2 fotografie vedle sebe ve 2 sloupcích, na které když uživatel klikne, vyskočí modální okno s krátkým textem, představující popis obrázku (vymyslete si)
+    na celý web bude aplikována funkce Scrollspy (automatické zvýraznění položek v navigaci podle toho, v které sekci se nacházíte)
+    Vše bude samozřejmě responzivní
+    -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-book-half"></i> Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#slider">Slider</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foto">Fotogalerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modal">Modalni okno</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- slider -->
+    <section id="slider" class="bg-light mt-5">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2>Slider</h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../cv06/placeholder.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../cv06/placeholder.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../cv06/placeholder.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Predchozi</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Dalsi</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- fotogalerie -->
+    <section id="foto"  class="bg-dark mt-5">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2 class="text-white">Fotogalerie</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 my-4 my-md-0">
+                    <a href="../cv06/placeholder.jpg" target="_blank">
+                        <img src="../cv06/placeholder.jpg" alt="placeholder" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-sm-4 my-4 my-md-0">
+                    <a href="../cv06/placeholder.jpg" target="_blank">
+                        <img src="../cv06/placeholder.jpg" alt="placeholder" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-sm-4 my-4 my-md-0">
+                    <a href="../cv06/placeholder.jpg" target="_blank">
+                        <img src="../cv06/placeholder.jpg" alt="placeholder" class="img-thumbnail">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- modal trigger -->
+    <section id="modal" class="bg-light mt-5">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2>Modalni okna</h2>
+                <p class="lead">Vyzkousejte si nase nova modalni okna</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, facilis aperiam. Voluptates aut maiores laborum qui ad velit, quo provident repudiandae tempora doloribus in et veritatis officiis, deleniti quidem magni. Delectus at nobis atque necessitatibus est animi dolores culpa minima! Numquam quos quibusdam deleniti reprehenderit magni animi distinctio vero odit.</p>
+                    <button class="btn btn-primary" data-bs-target="#reg-modal" data-bs-toggle="modal">Pro vice informaci kliknete zde</button>
+                </div>
+            </div>
+        <!--  -->
+
+        <!-- modal itself -->
+        <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Chci dostavat newsletter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, inventore. Doloremque assumenda eos minima dolorem maxime quam iusto, dolorum aspernatur ea perferendis numquam corrupti dolore, molestias suscipit sint architecto fugiat debitis repellat velit quae saepe molestiae provident. Quod, non recusandae!</p>
+                        <label for="modal-email" class="form-label"></label>
+                        <input type="email" class="form-control" id="modal-email" placeholder="Emailova adresa">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Odeslat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
+    </section>
+    <script>
+        var myCarousel = document.querySelector('#myCarousel');
+        var carousel = new bootstrap.Carousel(myCarousel);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
