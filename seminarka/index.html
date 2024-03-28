@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/1ca554094a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -23,7 +25,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Uvod</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#intro">Aktualní</a>
+                        <a class="nav-link" href="#live">Aktualní</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#pricing">Nahlásit nový</a>
@@ -76,9 +78,136 @@
         </div>
     </div>
 
-    <section id="live"></section>
+    <section id="live">
+        <div class="container-lg">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <h2>Aktualní hrozby</h2>
+                    <div class="scrollable">
 
-    <section id="new"></section>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Kategorie</th>
+                                    <th>Popis</th>
+                                    <th>Zdroj</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class='fas fa-fish'></i></td>
+                                    <td> Phishing</td>
+                                    <td>Fake dpd</td>
+                                    <td>hxxps://dpd-id-zasilka[.]cz</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="bi bi-virus2"></i></td>
+                                    <td> Malware</td>
+                                    <td>Troy</td>
+                                    <td>hxxps://back2dfuture[.]com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class='fas fa-fish'></i></td>
+                                    <td> Phishing</td>
+                                    <td>ČSSZ klon</td>
+                                    <td>hxxps://cssz_here-id1138[.]cz</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="bi bi-cart-x-fill"></i></td>
+                                    <td> Fake eshop</td>
+                                    <td>Adidas</td>
+                                    <td>hxxps://adidddddas[.]cz</td>
+                                </tr>
+                                <tr>
+                                    <td><i class='fas fa-fish'></i></td>
+                                    <td> Phishing</td>
+                                    <td>Fio Banka</td>
+                                    <td>hxxps://ibfio2010[.]cz</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <h2>Jak fungujeme</h2>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, vero?</p>
+                        <ul>
+                            <li>Odešlete nám zprávu pomocí formuláře</li>
+                            <li>Naši technici hrozbu prověří</li>
+                            <li>Záznam se přidá do databáze</li>
+                            <li>V tabulce se objeví nová hrozba</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="victim">
+        <div class="container-md">
+            <div class="row justify-content-between">
+                <h2 class="text-center">Stali jste se obětí?</h2>
+                <div class="col-md-4">
+                    <h3>1.</h3>
+                    <span class="h4">Nebojte se ozvat</span>
+                    <p>Kontaktujte příslušné orgány. Zavolejte do své banky a ověřte, že nedošlo k neoprávněnému pokusu o přihlášení do vašeho internetového bankovnictví</p>
+                    <p>Ohlásit podvod může přímo zde pomocí formuláře nebo na <a href="https://www.stoponline.cz/cs/">stoponline.cz</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h3>2.</h3>
+                    <span class="h4">Nic neplaťte!</span>
+                    <p>V případě ransomwaru se z Vás budou podvodníci snažit vymámit peníze výměnou za klíč k odeknutí Vašich dat. Je velice vzácné, že oběť klíč opravdu získá a dostane tak svá data zpět.</p>
+                    <p>Nebezpečí randomware lze zmírnit, pokud si děláte zálohy svých dat.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>3.</h3>
+                    <span class="h4">Zabezpečte své účty</span>
+                    <p>Pokud útočníci získali přístup k některému z vašich internetových účtů, je pravděpodobné, že se budou snažit prolomit i jiné. Pokud používáte stejné heslo pro více účtů, na nic nečekejte a změňte si ho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn">
+        <div class="container-md">
+            <div class="row justify-content-between">
+                <h2 class="text-center">Slovník pojmů</h2>
+                <div class="col-md-6">
+                    <h3>Phishing</h3>
+                    <p>Slovo phishing je lehká zkomolenina anglického slova pro lov ryb neboli fishing. Analogie je zřejmá – útočník (lovec) nahodí háček s návnadou například v podobě neodolatelné nabídky a čeká na oběť. Záměna písmena f za ph má původu ze slova „phreaks“, což byla hackerská skupina v USA, která ilegálně experimentovala s telekomunikačními systémy v devadesátých letech.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Malware</h3>
+                    <p>Malware obsahuje celou řadu různých kategorií škodlivého kódu – od trójských koní, ransomwaru, virů, červů až po bankovní malware. Obecně se dá říci, že jde o veškerý software, který byl vytvořen se škodlivým záměrem.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Ransomware</h3>
+                    <p>Pokud byl váš počítač nakažen, uvidíte na obrazovce zprávu s požadavkem na zaplacení konkrétního finančního obnosu. Případně najdete textový soubor v nakažených složkách. Ransomware také velmi často mění příponu napadených souborů.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Spam</h3>
+                    <p>Spam je jakákoliv forma nevyžádané hromadné digitální komunikace. Jde o nevyžádaná reklamní sdělení ve formě e-mailů, SMS nebo zpráv v komunikačních aplikacích, na sociálních sítích nebo diskuzních fórech, zasílané velkému počtu příjemců nebo publikované na velkém počtu míst na internetu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="passwords">
+        <div class="container-md">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h2>Jak zvolit silné heslo?</h2>
+                    <p>Dnešní počítače dokáží prolomit hesla, která byla dříve považována za bezpečná. Proto je nutné používat stále silnější hesla. Ideálně by mělo být alespoň 8 znaků dlouhé, obsahovat malá i velká písmena, čísla a speciální znaky, například @#*?</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Kdo si je má pamatovat?</h2>
+                    <p>Používejte password managery. Zvolne si jedno dostatečně silné heslo k databázi hesel. Všechna ostatní se budou ukládat do zabezpečené databáze. Heslo nemusí být jedno slovo s velkým písmenem na začátku a číslem na konci. To není příklad bezpečného hesla. Zkuste si v duchu říct nějakou básničku a heslo si odvodit z ní. Například, zvolme si, "<b>Skákal pes, přes oves</b>". Heslo z toho můžeme vytvořit třeba takto "<b>skakalPES^0ve$</b>". Obsahuje všechny druhy znaků a je snadno zapamatovatelné</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact"></section>
     
