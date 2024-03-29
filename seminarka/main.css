@@ -50,7 +50,104 @@ section:nth-child(even) {
     background-color: rgb(247, 248, 248);
 }
 
+section#contact {
+    background-color: rgb(2, 32, 32);
+}
+
 .navbar {
     background-color: rgba(2, 32, 32, 0);
     --bs-bg-opacity: 1;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+
+    .card img {
+        max-height: 190px;
+    }
+
+    .card-body {
+        min-height: 310px;
+    }
+    
+}
+@media screen and (min-width: 1000px) {
+
+    .card img {
+        max-height: 250px;
+    }
+
+    .card-body {
+        min-height: 240px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .card img {
+        max-height: 250px;
+    }
+
+    .card-body {
+        min-height: 220px;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+
+    .card img {
+        max-height: 185px;
+    }
+
+    .card-body {
+        min-height: 185px;
+    }
+    
+}
+
+.barndoor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+}
+
+.door {
+    display: flex;
+    flex-direction: row;
+}
+
+.door div {
+    width: 50%;
+    background-color: rgb(2, 32, 32);
+    transition: all 1500ms ease-in;
+}
+
+.barndoor .left,
+.barndoor .right
+.barndoor .inner {
+    background-color: rgb(2, 32, 32);
+    height: 100vh;
+}
+
+.barndoor .left,
+.barndoor .right {
+    width: 50%;
+}
+
+.barndoor .inner {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(2, 32, 32);
+    transition: all 1500ms ease-in;
+    position: relative;
+    top: 0;
+    left: 0;
 }

@@ -8,3 +8,15 @@ $(function () {
         $nav.css("background", "rgba(2, 32, 32, " + alpha +")");
     });
 });
+
+$(document).ready(function() {
+    var left = $(".left");
+    var right = $(".right");
+    var barndoor = $('.barndoor');
+    setTimeout(function() {
+        left.css("transform", "translatex(-100%)");
+        right.css("transform", "translatex(100%)");
+    }, 500);
+
+
+});
