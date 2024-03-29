@@ -15,6 +15,14 @@
 
 .hero-content button {
     box-shadow: darkcyan 0 0 17px 4px;
+    background-color: rgb(218, 238, 231) !important;
+    transition: all 200ms linear;
+}
+
+.hero-content button:hover {
+    box-shadow: darkcyan 0 0 27px 9px;
+    background-color: rgb(244, 255, 251) !important;
+    color: darkcyan;
 }
 
 .text-justify {
@@ -40,4 +48,9 @@ section:not(:first-of-type) {
 
 section:nth-child(even) {
     background-color: rgb(247, 248, 248);
+}
+
+.navbar {
+    background-color: rgba(2, 32, 32, 0);
+    --bs-bg-opacity: 1;
 }
