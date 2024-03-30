@@ -1,0 +1,170 @@
+.barndoor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+}
+
+.door {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 9998;
+}
+
+.door div {
+    width: 50%;
+    background-color: rgb(2, 32, 32);
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9997;
+    background-color: rgb(1, 14, 14);
+    /* display: none; */
+    animation: shadow 2s 1s forwards;
+}
+
+.barndoor .left,
+.barndoor .right,
+.barndoor .inner {
+    height: 100vh;
+}
+
+.barndoor .left { 
+    animation: openL 2s 4s forwards ease-in-out; 
+    border-right: solid 1px gold;
+}
+
+.barndoor .right {
+    animation: openR 2s 4s forwards ease-in-out;
+    border-left: solid 1px gold;
+}
+
+.barndoor .left,
+.barndoor .right {
+    width: 50%;
+    position: relative;
+}
+
+.door img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-60%);
+}
+
+.barndoor .left img {
+    left: 12vw;
+    z-index: 99998;
+}
+
+.barndoor .right img {
+    right: 12vw;
+    width: 110%;
+    z-index: 99999;
+}
+
+.progressbar-container {
+    position: fixed;
+    top: 90vh;
+    z-index: 9999;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+    background-color: #022020;
+}
+
+.progress-bar {
+    background-color: #fdce1e;
+}
+
+@keyframes openL {
+    from { left: 0; }
+    to { left: -100% };
+}
+
+@-webkit-keyframes openL {
+    from { left: 0; }
+    to { left: -100% };
+}
+
+@-moz-keyframes openL {
+    from { left: 0; }
+    to { left: -100% };
+}
+
+@-o-keyframes openL {
+    from { left: 0; }
+    to { left: -100% };
+}
+
+@keyframes openR {
+    from { right: 0;}
+    to { right: -100% ;}
+}
+
+@-webkit-keyframes openR {
+    from { right: 0;}
+    to { right: -100% ;}
+}
+
+@-moz-keyframes openR {
+    from { right: 0;}
+    to { right: -100% ;}
+}
+
+@-o-keyframes openR {
+    from { right: 0;}
+    to { right: -100% ;}
+}
+
+/* inner shadow */
+@keyframes shadow {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@-webkit-keyframes shadow {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@-moz-keyframes shadow {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@-o-keyframes shadow {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes loading {
+    from { width: 0% };
+    to { width: 100%}
+}
+
+/* warriors positioning */
+@media screen and (min-width: 1200px) {
+    .barndoor img {
+        max-height: 600px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .barndoor img {
+        max-height: 700px;
+    }
+
+    .barndoor .left img {
+        left: 13vw;
+    }
+}

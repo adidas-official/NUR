@@ -10,13 +10,20 @@ $(function () {
 });
 
 $(document).ready(function() {
-    var left = $(".left");
-    var right = $(".right");
+    var loader_bar = $('.progress-bar');
+    loader_bar.animate({
+        width: "100%"
+    }, 2000);
+
+    setTimeout(function() {
+        var loader = $('.progressbar-container');
+        loader.animate({
+            width: "0%"
+        },1000);
+    }, 2500);
+
     var barndoor = $('.barndoor');
     setTimeout(function() {
-        left.css("transform", "translatex(-100%)");
-        right.css("transform", "translatex(100%)");
-    }, 500);
-
-
+        barndoor.hide(0);
+    }, 6000)
 });

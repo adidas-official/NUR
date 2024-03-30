@@ -1,5 +1,5 @@
 .hero-image {
-    background-image: url(bg.jpg);
+    background-image: url(bg-resized.jpg);
     background-size: cover;
     width: 100%;
     height: 50vh;
@@ -32,6 +32,14 @@
 h2, h3 {
     margin-bottom: 1em;
 }
+
+.link {
+    text-decoration: underline;
+    color: darkcyan;
+    cursor: pointer;
+}
+
+
 
 .scrollable {
     max-height: 30vh;
@@ -108,46 +116,4 @@ section#contact {
         min-height: 185px;
     }
     
-}
-
-.barndoor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 9999;
-}
-
-.door {
-    display: flex;
-    flex-direction: row;
-}
-
-.door div {
-    width: 50%;
-    background-color: rgb(2, 32, 32);
-    transition: all 1500ms ease-in;
-}
-
-.barndoor .left,
-.barndoor .right
-.barndoor .inner {
-    background-color: rgb(2, 32, 32);
-    height: 100vh;
-}
-
-.barndoor .left,
-.barndoor .right {
-    width: 50%;
-}
-
-.barndoor .inner {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(2, 32, 32);
-    transition: all 1500ms ease-in;
-    position: relative;
-    top: 0;
-    left: 0;
 }
