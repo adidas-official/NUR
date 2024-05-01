@@ -1,0 +1,10 @@
+<svg width="310" height="310" xmlns="http://www.w3.org/2000/svg">
+    <!-- Magenta Circle -->
+    <circle cx="105" cy="105" r="100" fill="magenta" fill-opacity="0.5" stroke="magenta" stroke-opacity="1" stroke-width="2" />
+    
+    <!-- Cyan Circle -->
+    <circle cx="205" cy="105" r="100" fill="cyan" fill-opacity="0.5" stroke="cyan" stroke-opacity="1" stroke-width="2" />
+    
+    <!-- Yellow Circle -->
+    <circle cx="155" cy="205" r="100" fill="yellow" fill-opacity="0.5" stroke="yellow" stroke-opacity="1" stroke-width="2" />
+</svg>

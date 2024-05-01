@@ -84,3 +84,11 @@ video {
 img {
     width: 200px;
 }
+
+#podstranka2 {
+    display: flex;
+}
+#podstranka2 img{
+    width: 50%;
+    margin: auto;
+}
